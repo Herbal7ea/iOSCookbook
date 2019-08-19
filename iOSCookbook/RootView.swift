@@ -13,6 +13,10 @@ struct RootView: View {
                 NavigationLink(destination: LegacyAlertViewContainer()) {
                     Text("Alert View Controller")
                 }
+                
+                NavigationLink(destination: LegacyUIComponentsContainer()) {
+                    Text("UI Components")
+                }
             }
         }
     }

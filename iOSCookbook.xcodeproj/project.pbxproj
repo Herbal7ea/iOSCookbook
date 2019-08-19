@@ -17,6 +17,7 @@
 		7248A2B6230971A300B224C1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2B5230971A300B224C1 /* Utilities.swift */; };
 		7248A2B92309794500B224C1 /* Ideas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2B82309794500B224C1 /* Ideas.swift */; };
 		72F22214230A26980019C8E9 /* LegacyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */; };
+		72F22217230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F22216230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7248A2B5230971A300B224C1 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7248A2B82309794500B224C1 /* Ideas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ideas.swift; sourceTree = "<group>"; };
 		72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyAlertViewController.swift; sourceTree = "<group>"; };
+		72F22216230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyUIComponentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				7248A2B023094EBF00B224C1 /* LegacyTextDateToolbarViewController.swift */,
 				72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */,
+				72F22216230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift */,
 			);
 			path = UIKitComponents;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7248A29D23094E8A00B224C1 /* AppDelegate.swift in Sources */,
+				72F22217230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift in Sources */,
 				72F22214230A26980019C8E9 /* LegacyAlertViewController.swift in Sources */,
 				7248A2B223094EBF00B224C1 /* LegacyTextDateToolbarViewController.swift in Sources */,
 				7248A29F23094E8A00B224C1 /* SceneDelegate.swift in Sources */,

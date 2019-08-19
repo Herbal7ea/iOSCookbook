@@ -12,9 +12,6 @@ enum AlertType: Int, CaseIterable {
 }
 
 class LegacyAlertViewController: UITableViewController {
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
