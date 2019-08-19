@@ -9,29 +9,29 @@
 /* Begin PBXBuildFile section */
 		7248A29D23094E8A00B224C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A29C23094E8A00B224C1 /* AppDelegate.swift */; };
 		7248A29F23094E8A00B224C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A29E23094E8A00B224C1 /* SceneDelegate.swift */; };
-		7248A2A123094E8A00B224C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2A023094E8A00B224C1 /* ContentView.swift */; };
+		7248A2A123094E8A00B224C1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2A023094E8A00B224C1 /* RootView.swift */; };
 		7248A2A323094E8C00B224C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7248A2A223094E8C00B224C1 /* Assets.xcassets */; };
 		7248A2A623094E8C00B224C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7248A2A523094E8C00B224C1 /* Preview Assets.xcassets */; };
 		7248A2A923094E8C00B224C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7248A2A723094E8C00B224C1 /* LaunchScreen.storyboard */; };
-		7248A2B223094EBF00B224C1 /* LegacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2B023094EBF00B224C1 /* LegacyViewController.swift */; };
-		7248A2B323094EBF00B224C1 /* LegacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7248A2B123094EBF00B224C1 /* LegacyViewController.xib */; };
+		7248A2B223094EBF00B224C1 /* LegacyTextDateToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2B023094EBF00B224C1 /* LegacyTextDateToolbarViewController.swift */; };
 		7248A2B6230971A300B224C1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2B5230971A300B224C1 /* Utilities.swift */; };
 		7248A2B92309794500B224C1 /* Ideas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2B82309794500B224C1 /* Ideas.swift */; };
+		72F22214230A26980019C8E9 /* LegacyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7248A29923094E8A00B224C1 /* iOSCookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7248A29C23094E8A00B224C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7248A29E23094E8A00B224C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7248A2A023094E8A00B224C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7248A2A023094E8A00B224C1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7248A2A223094E8C00B224C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7248A2A523094E8C00B224C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7248A2A823094E8C00B224C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7248A2AA23094E8C00B224C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7248A2B023094EBF00B224C1 /* LegacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyViewController.swift; sourceTree = "<group>"; };
-		7248A2B123094EBF00B224C1 /* LegacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LegacyViewController.xib; sourceTree = "<group>"; };
+		7248A2B023094EBF00B224C1 /* LegacyTextDateToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyTextDateToolbarViewController.swift; sourceTree = "<group>"; };
 		7248A2B5230971A300B224C1 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7248A2B82309794500B224C1 /* Ideas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ideas.swift; sourceTree = "<group>"; };
+		72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,17 +64,12 @@
 		7248A29B23094E8A00B224C1 /* iOSCookbook */ = {
 			isa = PBXGroup;
 			children = (
+				72F2220F230A26170019C8E9 /* UIKitComponents */,
 				7248A2B72309793000B224C1 /* Other */,
 				7248A2B42309719400B224C1 /* Utilities */,
-				7248A29C23094E8A00B224C1 /* AppDelegate.swift */,
-				7248A29E23094E8A00B224C1 /* SceneDelegate.swift */,
-				7248A2A023094E8A00B224C1 /* ContentView.swift */,
-				7248A2A223094E8C00B224C1 /* Assets.xcassets */,
-				7248A2A723094E8C00B224C1 /* LaunchScreen.storyboard */,
-				7248A2AA23094E8C00B224C1 /* Info.plist */,
-				7248A2A423094E8C00B224C1 /* Preview Content */,
-				7248A2B023094EBF00B224C1 /* LegacyViewController.swift */,
-				7248A2B123094EBF00B224C1 /* LegacyViewController.xib */,
+				7248A2A023094E8A00B224C1 /* RootView.swift */,
+				72F22211230A264F0019C8E9 /* Assets */,
+				72F22210230A262E0019C8E9 /* Ignore */,
 			);
 			path = iOSCookbook;
 			sourceTree = "<group>";
@@ -101,6 +96,35 @@
 				7248A2B82309794500B224C1 /* Ideas.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		72F2220F230A26170019C8E9 /* UIKitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7248A2B023094EBF00B224C1 /* LegacyTextDateToolbarViewController.swift */,
+				72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */,
+			);
+			path = UIKitComponents;
+			sourceTree = "<group>";
+		};
+		72F22210230A262E0019C8E9 /* Ignore */ = {
+			isa = PBXGroup;
+			children = (
+				7248A29C23094E8A00B224C1 /* AppDelegate.swift */,
+				7248A29E23094E8A00B224C1 /* SceneDelegate.swift */,
+				7248A2A723094E8C00B224C1 /* LaunchScreen.storyboard */,
+				7248A2AA23094E8C00B224C1 /* Info.plist */,
+			);
+			name = Ignore;
+			sourceTree = "<group>";
+		};
+		72F22211230A264F0019C8E9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7248A2A223094E8C00B224C1 /* Assets.xcassets */,
+				7248A2A423094E8C00B224C1 /* Preview Content */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7248A2A923094E8C00B224C1 /* LaunchScreen.storyboard in Resources */,
-				7248A2B323094EBF00B224C1 /* LegacyViewController.xib in Resources */,
 				7248A2A623094E8C00B224C1 /* Preview Assets.xcassets in Resources */,
 				7248A2A323094E8C00B224C1 /* Assets.xcassets in Resources */,
 			);
@@ -176,11 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7248A29D23094E8A00B224C1 /* AppDelegate.swift in Sources */,
-				7248A2B223094EBF00B224C1 /* LegacyViewController.swift in Sources */,
+				72F22214230A26980019C8E9 /* LegacyAlertViewController.swift in Sources */,
+				7248A2B223094EBF00B224C1 /* LegacyTextDateToolbarViewController.swift in Sources */,
 				7248A29F23094E8A00B224C1 /* SceneDelegate.swift in Sources */,
 				7248A2B6230971A300B224C1 /* Utilities.swift in Sources */,
 				7248A2B92309794500B224C1 /* Ideas.swift in Sources */,
-				7248A2A123094E8A00B224C1 /* ContentView.swift in Sources */,
+				7248A2A123094E8A00B224C1 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

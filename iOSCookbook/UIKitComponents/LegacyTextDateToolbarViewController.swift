@@ -1,9 +1,10 @@
 // Based off the walkthrough from iosdevcenters excellent and simple blog: https://iosdevcenters.blogspot.com/2016/03/ios9-uidatepicker-example-with.html?m=1
+// Note: Not using Autolayout
 
 import UIKit
 import SwiftUI
 
-class LegacyViewController: UIViewController {
+class LegacyTextDateToolbarViewController: UIViewController {
 
     var dateTextField: UITextField!
     var datePicker: UIDatePicker!
@@ -21,7 +22,7 @@ class LegacyViewController: UIViewController {
 }
 
 // MARK: - TextFields
-extension LegacyViewController {
+extension LegacyTextDateToolbarViewController {
     func addTextField() -> UITextField {
         
         let bounds = UIScreen.main.bounds
@@ -47,7 +48,7 @@ extension LegacyViewController {
 }
 
 // MARK: - UITextFieldDelegate
-extension LegacyViewController: UITextFieldDelegate {
+extension LegacyTextDateToolbarViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         createDatePickerUI()
@@ -59,7 +60,7 @@ extension LegacyViewController: UITextFieldDelegate {
 }
 
 // MARK: - DatePicker
-extension LegacyViewController {
+extension LegacyTextDateToolbarViewController {
     @discardableResult
     func createDatePicker(for textField: UITextField) -> UIDatePicker {
         let width = Int(view.frame.size.width)
@@ -76,13 +77,13 @@ extension LegacyViewController {
 }
 
 // MARK: - Toolbar
-extension LegacyViewController {
+extension LegacyTextDateToolbarViewController {
     func createToolbar(for textfield: UITextField) {
     
         //Create Toolbar Buttons
         let spacer       = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneButton   = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(LegacyViewController.doneTapped))
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(LegacyViewController.cancelTapped))
+        let doneButton   = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(LegacyTextDateToolbarViewController.doneTapped))
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(LegacyTextDateToolbarViewController.cancelTapped))
         
         //Create Toolbar
         let tintColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
@@ -116,12 +117,12 @@ extension LegacyViewController {
 
 // MARK: - Swift UI compatibility
 // This exposes the LegacyViewController to SwiftUI
-struct LegacyViewControllerContainer: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> LegacyViewController {
-        return LegacyViewController()
+struct LegacyTextDateToolbarContainer: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> LegacyTextDateToolbarViewController {
+        return LegacyTextDateToolbarViewController()
     }
     
-    func updateUIViewController(_ uiViewController: LegacyViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: LegacyTextDateToolbarViewController, context: Context) {
         
     }
 }
