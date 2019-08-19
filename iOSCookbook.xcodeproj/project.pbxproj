@@ -18,7 +18,20 @@
 		7248A2B92309794500B224C1 /* Ideas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A2B82309794500B224C1 /* Ideas.swift */; };
 		72F22214230A26980019C8E9 /* LegacyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */; };
 		72F22217230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F22216230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift */; };
+		72F2221A230AB0460019C8E9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F22219230AB0460019C8E9 /* File.swift */; };
+		72F22227230AB2DA0019C8E9 /* iOSCookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F22226230AB2DA0019C8E9 /* iOSCookbookTests.swift */; };
+		72F22230230AB3110019C8E9 /* ErrorExplorationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F2222F230AB3110019C8E9 /* ErrorExplorationTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72F22229230AB2DA0019C8E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7248A29123094E8A00B224C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7248A29823094E8A00B224C1;
+			remoteInfo = iOSCookbook;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7248A29923094E8A00B224C1 /* iOSCookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +47,22 @@
 		7248A2B82309794500B224C1 /* Ideas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ideas.swift; sourceTree = "<group>"; };
 		72F22212230A26980019C8E9 /* LegacyAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyAlertViewController.swift; sourceTree = "<group>"; };
 		72F22216230A7E8B0019C8E9 /* LegacyUIComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyUIComponentsViewController.swift; sourceTree = "<group>"; };
+		72F22219230AB0460019C8E9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		72F22224230AB2DA0019C8E9 /* iOSCookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F22226230AB2DA0019C8E9 /* iOSCookbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCookbookTests.swift; sourceTree = "<group>"; };
+		72F22228230AB2DA0019C8E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F2222F230AB3110019C8E9 /* ErrorExplorationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExplorationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7248A29623094E8A00B224C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F22221230AB2DA0019C8E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,7 +75,9 @@
 		7248A29023094E8A00B224C1 = {
 			isa = PBXGroup;
 			children = (
+				72F2222E230AB2FA0019C8E9 /* Tests */,
 				7248A29B23094E8A00B224C1 /* iOSCookbook */,
+				72F22225230AB2DA0019C8E9 /* iOSCookbookTests */,
 				7248A29A23094E8A00B224C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				7248A29923094E8A00B224C1 /* iOSCookbook.app */,
+				72F22224230AB2DA0019C8E9 /* iOSCookbookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +94,7 @@
 		7248A29B23094E8A00B224C1 /* iOSCookbook */ = {
 			isa = PBXGroup;
 			children = (
+				72F22218230AB0300019C8E9 /* Swift */,
 				72F2220F230A26170019C8E9 /* UIKitComponents */,
 				7248A2B72309793000B224C1 /* Other */,
 				7248A2B42309719400B224C1 /* Utilities */,
@@ -130,6 +159,31 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		72F22218230AB0300019C8E9 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				72F22219230AB0460019C8E9 /* File.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		72F22225230AB2DA0019C8E9 /* iOSCookbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				72F22226230AB2DA0019C8E9 /* iOSCookbookTests.swift */,
+				72F22228230AB2DA0019C8E9 /* Info.plist */,
+			);
+			path = iOSCookbookTests;
+			sourceTree = "<group>";
+		};
+		72F2222E230AB2FA0019C8E9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				72F2222F230AB3110019C8E9 /* ErrorExplorationTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +204,24 @@
 			productReference = 7248A29923094E8A00B224C1 /* iOSCookbook.app */;
 			productType = "com.apple.product-type.application";
 		};
+		72F22223230AB2DA0019C8E9 /* iOSCookbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F2222B230AB2DA0019C8E9 /* Build configuration list for PBXNativeTarget "iOSCookbookTests" */;
+			buildPhases = (
+				72F22220230AB2DA0019C8E9 /* Sources */,
+				72F22221230AB2DA0019C8E9 /* Frameworks */,
+				72F22222230AB2DA0019C8E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72F2222A230AB2DA0019C8E9 /* PBXTargetDependency */,
+			);
+			name = iOSCookbookTests;
+			productName = iOSCookbookTests;
+			productReference = 72F22224230AB2DA0019C8E9 /* iOSCookbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +234,10 @@
 				TargetAttributes = {
 					7248A29823094E8A00B224C1 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					72F22223230AB2DA0019C8E9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7248A29823094E8A00B224C1;
 					};
 				};
 			};
@@ -179,6 +255,7 @@
 			projectRoot = "";
 			targets = (
 				7248A29823094E8A00B224C1 /* iOSCookbook */,
+				72F22223230AB2DA0019C8E9 /* iOSCookbookTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +268,13 @@
 				7248A2A923094E8C00B224C1 /* LaunchScreen.storyboard in Resources */,
 				7248A2A623094E8C00B224C1 /* Preview Assets.xcassets in Resources */,
 				7248A2A323094E8C00B224C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F22222230AB2DA0019C8E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,11 +292,29 @@
 				7248A29F23094E8A00B224C1 /* SceneDelegate.swift in Sources */,
 				7248A2B6230971A300B224C1 /* Utilities.swift in Sources */,
 				7248A2B92309794500B224C1 /* Ideas.swift in Sources */,
+				72F2221A230AB0460019C8E9 /* File.swift in Sources */,
 				7248A2A123094E8A00B224C1 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72F22220230AB2DA0019C8E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F22230230AB3110019C8E9 /* ErrorExplorationTests.swift in Sources */,
+				72F22227230AB2DA0019C8E9 /* iOSCookbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72F2222A230AB2DA0019C8E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7248A29823094E8A00B224C1 /* iOSCookbook */;
+			targetProxy = 72F22229230AB2DA0019C8E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7248A2A723094E8C00B224C1 /* LaunchScreen.storyboard */ = {
@@ -380,6 +482,46 @@
 			};
 			name = Release;
 		};
+		72F2222C230AB2DA0019C8E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6A4W4G6ZCH;
+				INFOPLIST_FILE = iOSCookbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonbott.iOSCookbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCookbook.app/iOSCookbook";
+			};
+			name = Debug;
+		};
+		72F2222D230AB2DA0019C8E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6A4W4G6ZCH;
+				INFOPLIST_FILE = iOSCookbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonbott.iOSCookbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCookbook.app/iOSCookbook";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -397,6 +539,15 @@
 			buildConfigurations = (
 				7248A2AE23094E8C00B224C1 /* Debug */,
 				7248A2AF23094E8C00B224C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F2222B230AB2DA0019C8E9 /* Build configuration list for PBXNativeTarget "iOSCookbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F2222C230AB2DA0019C8E9 /* Debug */,
+				72F2222D230AB2DA0019C8E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
